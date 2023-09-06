@@ -1,0 +1,17 @@
+FROM python:3.9.2
+
+ENV DASH_DEBUG_MODE False
+ENV DASH_AUTH_MODE False
+
+WORKDIR /app
+RUN pip install jupyter nbconvert
+
+COPY ./requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY . /app
+
+
+EXPOSE 8220
+# CMD ["python","-u","abm_refactor1.py"]
+
