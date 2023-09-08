@@ -8,6 +8,6 @@ services:
       context: ./app
       dockerfile: Dockerfile.dev
     ports:
-      - 8220:8220
+      - 8222:8222
     restart: always
-    command: ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8220", "--no-browser", "--allow-root", "--NotebookApp.token=''"]
+    command: ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8222", "--no-browser", "--allow-root", "--NotebookApp.token=''"]

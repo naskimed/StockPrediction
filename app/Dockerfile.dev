@@ -12,6 +12,6 @@ RUN pip install -r requirements.txt
 COPY . /app
 
 
-EXPOSE 8220
+EXPOSE 8222
 # CMD ["python","-u","abm_refactor1.py"]
 
